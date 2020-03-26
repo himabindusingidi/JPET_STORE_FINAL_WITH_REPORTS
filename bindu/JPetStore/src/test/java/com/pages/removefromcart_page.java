@@ -18,6 +18,8 @@ public class removefromcart_page //removing the items from the cart
 {
 	WebDriver driver; //creating webdriver as local variable
 	
+	//Adding locators
+	
 	By search = By.xpath("//*[@id=\"SearchContent\"]/form/input[1]");
 	By searchbutton = By.xpath("//*[@id=\"SearchContent\"]/form/input[2]");
 	By productID = By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[2]/td[2]/b/a/font");
@@ -25,6 +27,7 @@ public class removefromcart_page //removing the items from the cart
 	By addtocart = By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[7]/td/a");
 	By removefromcart = By.xpath("//*[@id=\"Cart\"]/form/table/tbody/tr[2]/td[8]/a");
 	
+	// launching the browser
 	
 	public void browserLaunch(String browser,String url)
 	{
@@ -51,6 +54,9 @@ public class removefromcart_page //removing the items from the cart
 			driver.get(url);
 		
 		} 
+		
+		//if browser cannot be launched
+		
 		catch (WebDriverException e) 
 		{
 			System.out.println("Browser could not be launched");
@@ -68,32 +74,32 @@ public class removefromcart_page //removing the items from the cart
 	}
 
 
-	public void search() // method for search
+	public void search() // method for searching an item by passing sendkeys
 	{
 		driver.findElement(search).sendKeys("fish");
 	}
 
-	public void searchbutton() // method for search button
+	public void searchbutton() // method for clicking the search button
 	{
 		driver.findElement(searchbutton).click();
 	}
 
-	public void productID() // method for product ID
+	public void productID() // method for clicking the selected product ID
 	{
 		driver.findElement(productID).click();
 	}
 
-	public void ItemID() // method for Item ID
+	public void ItemID() // method for clicking the selected Item ID
 	{
 		driver.findElement(ItemID).click();
 	}
 
-	public void addtocart() // method for add to cart
+	public void addtocart() // method for clicking to add the selected item to cart
 	{
 		driver.findElement(addtocart).click();
 	}
 	
-	public void removefromcart() // method to remove an item from the cart
+	public void removefromcart() // method to click and remove an item from the cart
 	{
 		driver.findElement(removefromcart).click();
 		
@@ -105,6 +111,7 @@ public class removefromcart_page //removing the items from the cart
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			File screenshot = ts.getScreenshotAs(OutputType.FILE);
 			screenshot.renameTo(new File("src/test/resources/screenshot/image4"+datestr+".png"));
+			
 		driver.close(); // close the browser
 	}
 }

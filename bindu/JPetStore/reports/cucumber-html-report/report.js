@@ -50,28 +50,28 @@ formatter.match({
   "location": "login_step.the_user_launched_the_chromebrowser()"
 });
 formatter.result({
-  "duration": 23470640900,
+  "duration": 21116093700,
   "status": "passed"
 });
 formatter.match({
   "location": "login_step.the_user_open_the_JPetStore_website()"
 });
 formatter.result({
-  "duration": 2356167600,
+  "duration": 2292151700,
   "status": "passed"
 });
 formatter.match({
   "location": "login_step.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 1817106800,
+  "duration": 3383090900,
   "status": "passed"
 });
 formatter.match({
   "location": "login_step.the_user_enters_the_username_and_password_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 5222725400,
+  "duration": 4517784400,
   "status": "passed"
 });
 formatter.scenario({
@@ -122,42 +122,42 @@ formatter.match({
   "location": "addtocart_step.open_the_url_in_browser()"
 });
 formatter.result({
-  "duration": 15423922100,
+  "duration": 11840498800,
   "status": "passed"
 });
 formatter.match({
   "location": "addtocart_step.the_url_is_launched_click_on_search_and_enter_search_content()"
 });
 formatter.result({
-  "duration": 133098300,
+  "duration": 93004400,
   "status": "passed"
 });
 formatter.match({
   "location": "addtocart_step.click_on_search_button()"
 });
 formatter.result({
-  "duration": 606150300,
+  "duration": 628445400,
   "status": "passed"
 });
 formatter.match({
   "location": "addtocart_step.click_on_product_id()"
 });
 formatter.result({
-  "duration": 546208200,
+  "duration": 324696300,
   "status": "passed"
 });
 formatter.match({
   "location": "addtocart_step.click_on_Item_ID()"
 });
 formatter.result({
-  "duration": 444566100,
+  "duration": 352979400,
   "status": "passed"
 });
 formatter.match({
   "location": "addtocart_step.click_on_addtocart()"
 });
 formatter.result({
-  "duration": 1118838900,
+  "duration": 5792314800,
   "status": "passed"
 });
 formatter.scenario({
@@ -218,56 +218,56 @@ formatter.match({
   "location": "updatecart_step.open_the_url_in_browser()"
 });
 formatter.result({
-  "duration": 13325081400,
+  "duration": 13416494000,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.the_url_is_launched_click_on_search_and_enter_search_content_in_search()"
 });
 formatter.result({
-  "duration": 93590100,
+  "duration": 83092200,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.click_on_the_searchbutton_bar()"
 });
 formatter.result({
-  "duration": 688102000,
+  "duration": 2928684800,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.click_on_the_product_id()"
 });
 formatter.result({
-  "duration": 381725200,
+  "duration": 298363800,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.click_on_the_Item_ID()"
 });
 formatter.result({
-  "duration": 534798200,
+  "duration": 332369800,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.click_on_the_addtocart()"
 });
 formatter.result({
-  "duration": 577279700,
+  "duration": 637292700,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.change_the_quantity()"
 });
 formatter.result({
-  "duration": 155467900,
+  "duration": 120614500,
   "status": "passed"
 });
 formatter.match({
   "location": "updatecart_step.click_on_the_update_cart()"
 });
 formatter.result({
-  "duration": 1004221600,
+  "duration": 763113600,
   "status": "passed"
 });
 formatter.scenario({
@@ -323,49 +323,49 @@ formatter.match({
   "location": "removefromcart_step.open_the_given_url_in_the_browser()"
 });
 formatter.result({
-  "duration": 13012907200,
+  "duration": 11602059300,
   "status": "passed"
 });
 formatter.match({
   "location": "removefromcart_step.the_url_is_launched_then_click_on_search_and_enter_search_content()"
 });
 formatter.result({
-  "duration": 146416500,
+  "duration": 105624400,
   "status": "passed"
 });
 formatter.match({
   "location": "removefromcart_step.click_on_the_Search_button()"
 });
 formatter.result({
-  "duration": 752577500,
+  "duration": 5609978500,
   "status": "passed"
 });
 formatter.match({
   "location": "removefromcart_step.click_on_product_ID()"
 });
 formatter.result({
-  "duration": 363596900,
+  "duration": 345937100,
   "status": "passed"
 });
 formatter.match({
   "location": "removefromcart_step.click_on_Item_id()"
 });
 formatter.result({
-  "duration": 399580400,
+  "duration": 338287300,
   "status": "passed"
 });
 formatter.match({
   "location": "removefromcart_step.click_on_AddToCart()"
 });
 formatter.result({
-  "duration": 550147200,
+  "duration": 839171000,
   "status": "passed"
 });
 formatter.match({
   "location": "removefromcart_step.click_on_RemoveFromCart()"
 });
 formatter.result({
-  "duration": 879738800,
+  "duration": 879105100,
   "status": "passed"
 });
 formatter.scenario({
@@ -411,35 +411,35 @@ formatter.match({
   "location": "signout_step.the_user_has_launched_the_chromebrowser()"
 });
 formatter.result({
-  "duration": 10148931200,
+  "duration": 13215417500,
   "status": "passed"
 });
 formatter.match({
   "location": "signout_step.the_user_opens_the_JPetStore_website()"
 });
 formatter.result({
-  "duration": 1445621500,
+  "duration": 1833097700,
   "status": "passed"
 });
 formatter.match({
   "location": "signout_step.user_clicking_on_login_button()"
 });
 formatter.result({
-  "duration": 784995900,
+  "duration": 3901345800,
   "status": "passed"
 });
 formatter.match({
   "location": "signout_step.the_user_enterS_the_username_and_password_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 607124500,
+  "duration": 1682070000,
   "status": "passed"
 });
 formatter.match({
   "location": "signout_step.after_login_sign_out_from_the_application()"
 });
 formatter.result({
-  "duration": 1025124900,
+  "duration": 1376127800,
   "status": "passed"
 });
 });

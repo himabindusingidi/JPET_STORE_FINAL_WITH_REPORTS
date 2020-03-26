@@ -21,6 +21,7 @@ public class addtocart_page //adding the item in cart
 	By ItemID = By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[3]/td[1]/a");
 	By addtocart = By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[7]/td/a");
 
+	// to launch the browser
 	public void browserLaunch(String browser,String url)
 	{
 		try {
@@ -46,6 +47,7 @@ public class addtocart_page //adding the item in cart
 			driver.get(url);
 		
 		} 
+		//if browser is not launched
 		catch (WebDriverException e) 
 		{
 			System.out.println("Browser could not be launched");
@@ -62,27 +64,27 @@ public class addtocart_page //adding the item in cart
 		System.out.println(driver.getTitle());
 	}
 		
-	public void search() //method for search
+	public void search() //method for passing the sendkeys and search the required item
 	{
 		driver.findElement(search).sendKeys("fish");
 	}
 
-	public void searchbutton() //method for button
+	public void searchbutton() //method for clicking the search button
 	{
 		driver.findElement(searchbutton).click();
 	}
 
-	public void productID() //method for product ID
+	public void productID() //method for clicking the required product ID
 	{
 		driver.findElement(productID).click();
 	}
 
-	public void ItemID() //method for Item ID
+	public void ItemID() //method for clicking the selected Item ID
 	{
 		driver.findElement(ItemID).click();
 	}
 
-	public void addtocart() // method for adding the item in the cart
+	public void addtocart() // method for clicking and adding the item in the cart
 	{
 		driver.findElement(addtocart).click();
 		
@@ -95,6 +97,7 @@ public class addtocart_page //adding the item in cart
 		File screenshot = ts.getScreenshotAs(OutputType.FILE);
 		screenshot.renameTo(new File("src/test/resources/screenshot/image2"+datestr+".png"));
 		
+		//method for closing the browser
 		driver.close();
 	}
 

@@ -25,6 +25,8 @@ public class login_page // login to the application
 	By password=By.name("password");
 	By submit=By.xpath("//*[@id=\"Catalog\"]/form/input");
 	
+	// to launch the browser
+	
 	public void browserLaunch(String browser,String url)
 	{
 		try {
@@ -50,6 +52,8 @@ public class login_page // login to the application
 			driver.get(url);
 		
 		} 
+		
+		//if browser cannot be launched
 		catch (WebDriverException e) 
 		{
 			System.out.println("Browser could not be launched");
@@ -57,7 +61,7 @@ public class login_page // login to the application
 	}
 
 
-public void url() //opening the url in chrome browser
+public void url() //method to open the chrome browser
 {
 	System.setProperty("webdriver.chrome.driver","D:\\Downloads\\chromedriver_win32\\chromedriver.exe");
 	driver=new ChromeDriver();
@@ -70,7 +74,7 @@ public void loginpage() // method to open the url in the browser
 	System.out.println(driver.getTitle());
 }
 
-public void logindetails() // method for the login credentials
+public void logindetails() // method for the login credentials by passing keys
 {
 
 	WebElement link =driver.findElement(signin); 
@@ -82,7 +86,7 @@ public void logindetails() // method for the login credentials
 	driver.findElement(password).clear(); 
 	driver.findElement(password).sendKeys("7702065605"); 
 }
-public void submit() throws InterruptedException //method to submit the credentials
+public void submit() throws InterruptedException //method to click and submit the credentials
 {
 	driver.findElement(submit).click(); 
 	Thread.sleep(3000);

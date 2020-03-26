@@ -17,7 +17,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class updatecart_page //updating the items in the cart
 {
 	WebDriver driver; //creating webdriver as local variable
-
+	
+//Adding locators
+	
 	By search = By.xpath("//*[@id=\"SearchContent\"]/form/input[1]");
 	By searchbutton = By.xpath("//*[@id=\"SearchContent\"]/form/input[2]");
 	By productID = By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[2]/td[2]/b/a/font");
@@ -30,6 +32,8 @@ public class updatecart_page //updating the items in the cart
 	{
 		this.driver = driver; 
 	}
+	
+	//launching the required browser
 
 	public void browserLaunch(String browser,String url)
 	{
@@ -56,6 +60,9 @@ public class updatecart_page //updating the items in the cart
 			driver.get(url);
 		
 		} 
+		
+		// if browser cannot be launched 
+		
 		catch (WebDriverException e) 
 		{
 			System.out.println("Browser could not be launched");
@@ -73,40 +80,40 @@ public class updatecart_page //updating the items in the cart
 	}
 
 
-	public void search() // method for search
+	public void search() // method for searching the item by passing sendkeys
 	{
 		driver.findElement(search).sendKeys("fish");
 	}
 
-	public void searchbutton() // method for search button
+	public void searchbutton() // method for clicking the search button
 	{
 		driver.findElement(searchbutton).click();
 	}
 
-	public void productID() // method for productID
+	public void productID() // method for clicking the productID of the selected item
 	{
 		driver.findElement(productID).click();
 	}
 
-	public void ItemID() // method for Item ID
+	public void ItemID() // method for clicking the Item ID of the selected item
 	{
 		driver.findElement(ItemID).click();
 	}
 
-	public void addtocart() // method for adding in cart
+	public void addtocart() // method for adding the selected item to cart
 	{
 		driver.findElement(addtocart).click();
 
 	}
 
-	public void quantity() // method for quantity
+	public void quantity() // method for updating the quantity of the selected item in the cart
 	{
 		driver.findElement(quantity).clear();
 		
 		driver.findElement(quantity).sendKeys("2");
 	}
 
-	public void updatecart()  // method for updating the cart
+	public void updatecart()  // method for updating the amount in cart
 	{
 		driver.findElement(updatecart).click();
 		
@@ -119,7 +126,7 @@ public class updatecart_page //updating the items in the cart
 			File screenshot = ts.getScreenshotAs(OutputType.FILE);
 			screenshot.renameTo(new File("src/test/resources/screenshot/image3"+datestr+".png"));
 	
-		driver.close(); // close the browser
+		driver.close(); // method to close the browser
 		
 	}
 }
